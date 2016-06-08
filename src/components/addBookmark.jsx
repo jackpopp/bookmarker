@@ -3,11 +3,17 @@ import React from 'react';
 export default React.createClass({
   render() {
     return <div>
-      <label>Link</label>
-      <input placeholder="Link" />
+      <div>
+        <label>Link</label>
+        <input placeholder="Link" />
+      </div>
 
-      <label>Title</label>
-      <input placeholder="Title" />
+      <div>
+        <label>Title</label>
+        <input placeholder="Title" />
+      </div>
+
+      <button />
     </div>
   }
 })
