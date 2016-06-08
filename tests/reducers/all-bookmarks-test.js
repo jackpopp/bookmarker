@@ -1,6 +1,6 @@
 import 'babel-polyfill';
 import { assert } from 'chai';
-import reducer from '../../src/reducers/all-bookmarks';
+import reducer from '../../src/reducers/allBookmarks';
 
 describe('All Bookmakrs Reducer', () => {
   it('should add to state', () => {

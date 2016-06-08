@@ -9,9 +9,14 @@ import Reducers from './reducers';
 const store = createStore(Reducers);
 const mount = document.querySelector('#app');
 
-ReactDom.render(
-  <Provider store={store}>
-    <App />
-  </Provider>, 
-  mount
-);
+const render = () => {
+  ReactDom.render(
+    <Provider store={store}>
+      <App />
+    </Provider>, 
+    mount
+  );
+}
+
+store.subscribe(render);
+render();

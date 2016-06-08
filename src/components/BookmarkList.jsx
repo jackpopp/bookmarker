@@ -1,4 +1,5 @@
 import React from 'react';
+import AddBookmark from './addBookmark.jsx';
 
 export default React.createClass({
   render() {
@@ -9,6 +10,8 @@ export default React.createClass({
           <a href="">Link</a>
         </li>
       </ul>
+      <AddBookmark />
+
     </div>
   }
 });

@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import allBookmarks from './all-bookmarks'
+import allBookmarks from './allBookmarks'
 
 export default combineReducers({
   allBookmarks
