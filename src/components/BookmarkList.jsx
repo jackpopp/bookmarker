@@ -1,5 +1,5 @@
 import React from 'react';
-import AddBookmark from './addBookmark.jsx';
+import AddBookmark from './AddBookmark.jsx';
 
 export default React.createClass({
   render() {
