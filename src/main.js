@@ -1,7 +1,17 @@
 import ReactDom from 'react-dom';
 import React from 'react';
-import App from './components/App.jsx';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
+import App from './components/App.jsx';
+import Reducers from './reducers';
+
+const store = createStore(Reducers);
 const mount = document.querySelector('#app');
 
-ReactDom.render(<App />, mount);
+ReactDom.render(
+  <Provider store={store}>
+    <App />
+  </Provider>, 
+  mount
+);
