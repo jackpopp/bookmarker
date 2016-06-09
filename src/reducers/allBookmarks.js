@@ -11,6 +11,8 @@ export default (state = [], action) => {
           uri: action.uri
         }
       ]
+    case "GET" :
+      return state;
     default:
       return state;
   }
