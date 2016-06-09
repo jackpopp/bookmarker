@@ -1,6 +1,13 @@
 import React from 'react';
+import { addBookmark } from '../actions/actions';
 
 export default React.createClass({
+  addItem() {
+    this.props.store.dispatch(addBookmark({
+      uri: undefined,
+      title: undefined
+    }));
+  },
   render() {
     return <div>
       <div>
@@ -13,7 +20,7 @@ export default React.createClass({
         <input placeholder="Title" />
       </div>
 
-      <button />
+      <button onClick={this.addItem} />
     </div>
   }
 })
